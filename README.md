@@ -68,7 +68,7 @@ let/const name:type = value;
 
 -   if you want to add more values to interface you can redefine the structure and add new values like
 
-````
+```
 interface user {
     name : string,
 }
@@ -76,5 +76,5 @@ interface user {
 interface user{
     isActive : boolean,
  }
- ```
-````
+
+```
