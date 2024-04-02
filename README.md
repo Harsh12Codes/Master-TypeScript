@@ -34,13 +34,47 @@ let/const name:type = value;
 
 -   "readonly" is put before the key in the object which you want that no one can change the value.
 
-- "?" can be put such that "class?:string" to make the class atribute optional
+-   "?" can be put such that "class?:string" to make the class atribute optional
 
-- "&" can be used to combine the types of two classes.
+-   "&" can be used to combine the types of two classes.
 
 ### Arrays
 
-- arrays can be defined as simple as 
-  ": number[]" , "Array<number>".
+-   arrays can be defined as simple as
+    ": number[]" , "Array<number>".
 
-- an empty array can be defined as ":[]".
+-   an empty array can be defined as ":[]".
+
+### Union Types
+
+-   "|" can be used to make union of types or restrict the input to some specific values.
+
+### Tuples
+
+-   "[number ,string, number]" , this is tuple structure and now it enables us to specifically use number in 1st position of array then string and then number ,if it doesn't match it will gonna throw an error.
+
+-   you can also push or use other array functions but just the data type mentioned in the tuples
+
+### Enums
+
+-   enums are fixed set of values that you can use for that type.
+
+-   put const to reduce the produced javascript code from that typescript code
+
+### Interfaces
+
+-   interfaces are like classes of type
+-   here you describe the structure of the class or variable with respect to type.
+
+-   if you want to add more values to interface you can redefine the structure and add new values like
+
+````
+interface user {
+    name : string,
+}
+
+interface user{
+    isActive : boolean,
+ }
+ ```
+````
