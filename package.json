@@ -1,0 +1,14 @@
+{
+    "name": "master-typescript",
+    "version": "1.0.0",
+    "description": "- Typescript is just javascript + type safety.\r - Typescript has static checking which helps to tell you that you did wrong as soon as you do something wrong.\r - more code for same functionality.\r - it is a wrapper around javascript.\r - it is a development tool basically.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^3.1.0"
+    }
+}
