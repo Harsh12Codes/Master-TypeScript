@@ -78,3 +78,19 @@ interface user{
  }
 
 ```
+
+- interface have class inheritance  like  
+
+```
+interface PersonX {
+    name: string;
+    age: number;
+    startTrial?: boolean;
+    trailMethod?: () => void; //or trailMethod?(): void;
+}
+
+
+interface PersomMain extends PersonX {
+    role: "Admin" | "User" | "SuperAdmin";
+}
+```
